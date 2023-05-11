@@ -45,9 +45,9 @@ pipeline {
     stage('SonarQube Analysis') {
       steps {
         withSonarQubeEnv('SonarQube22') {
-          sh 'mvn clean verify sonar:sonar  -Dsonar.projectKey=test  \
+          sh 'mvn clean verify sonar:sonar  -Dsonar.projectKey=ci-cd-1  \
                                             -Dsonar.host.url=http://localhost:9000 \
-                                            -Dsonar.login=sqp_e0d26f9c0ae239f417fd7357042003f6fdd2d48c \
+                                            -Dsonar.login=sqp_17f8ac444530d4cb6593114d4d00bb60715a30a0 \
                                             -Dsonar.sources=src/'
         }
       }
