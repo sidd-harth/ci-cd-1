@@ -131,7 +131,7 @@ pipeline {
             steps {
                 script {
                     echo "Starting Push Release Branch..."
-                    sh "mvn --batch-mode release:clean release:prepare release:perform "
+                    sh "mvn --batch-mode release:clean release:prepare release:perform -Pnexus-snapshot"
                 }
             }
             post {
