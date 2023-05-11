@@ -4,7 +4,7 @@
 
 	<groupId>2bb670b7-914d-4c03-9cf3-74889d8836d1</groupId>
 	<artifactId>ci-cd-1</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>2.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
 	<name>ci-cd-1</name>
@@ -13,7 +13,7 @@
 		<url>https://github.com/sidd-harth/ci-cd-1.git</url>
 		<connection>scm:git:https://github.com/sidd-harth/ci-cd-1.git</connection>
 		<developerConnection>scm:git:https://github.com/sidd-harth/ci-cd-1.git</developerConnection>
-		<tag>1.0.0</tag>
+		<tag>2.0.0</tag>
 	</scm>
 
 	<profiles>
