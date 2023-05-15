@@ -126,5 +126,15 @@ output application/json
     <flow name="get:\test:sample-app-config">
         <logger level="INFO" message="helooooooooooooooooooooooooooo" />
 		<set-payload value="helooooooooooooooooooooooooooo" doc:name="Set Payload" doc:id="f825bdf9-05c6-4d78-8719-350204d8499f" />
+		<ee:transform doc:name="Transform Message" doc:id="6cdb1208-a074-46ec-91b9-e69260461950" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	"hello":"World"
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
     </flow>
 </mule>
