@@ -136,5 +136,6 @@ output application/json
 			</ee:message>
 		</ee:transform>
 		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="f825bdf9-05c6-4d78-8719-350204d8499f" />
+		<set-payload value="123435556667" doc:name="Set Payload" doc:id="49f54310-e0cb-4502-bafe-171a9d4c9018" />
     </flow>
 </mule>
